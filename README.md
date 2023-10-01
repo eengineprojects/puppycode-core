@@ -15,4 +15,4 @@ Examples that aren't basic programming (a simple code runner api can't run this 
 * Program that reads a file
 * Program that detects a key press
 ## "fake library"
-Functions like `csharp Console.ReadKey()`, for example, the "runtime" (element like textarea) can have an onkeypress event
+Functions like ```csharp Console.ReadKey()```, for example, the "runtime" (element like textarea) can have an onkeypress event
