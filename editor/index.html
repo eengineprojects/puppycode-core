@@ -9,7 +9,7 @@
         rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/puppycode-core/material.css">
-    <link rel="stylesheet" href="/puppycode-core//style.css">
+    <link rel="stylesheet" href="/puppycode-core/style.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="script.js"></script>
 </head>
@@ -38,55 +38,39 @@
     </div-->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
-        <header class="mdl-layout__header" style="display:none">
-            <!--div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="font-family:'Roboto';font-weight:500">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="font-family:'Roboto';font-weight:500">
                 <a href="#scroll-tab-1" class="mdl-layout__tab is-active" onclick="">File</a>
-                <a href="#scroll-tab-2" class="mdl-layout__tab" onclick="">Code</a>
-                <a href="#scroll-tab-3" class="mdl-layout__tab" onclick="">Preview</a>
-                <a href="#scroll-tab-3" class="mdl-layout__tab" onclick="">Community</a>
-                <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">Libraries</a>
+                <a href="#scroll-tab-2" class="mdl-layout__tab" onclick="">Home</a>
+                <a href="#scroll-tab-3" class="mdl-layout__tab" onclick="">View</a>
                 <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">Add Ons</a>
                 <a class="mdl-navigation__link" href=""><i class="material-icons">play</i></a>
-            </div-->
-            <div class="mdl-layout__header-row" style="display:none">
+            </div>
+            <div class="mdl-layout__header-row">
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <!-- File -->
-                    <a class="mdl-navigation__link puppycode-file" href="">New site</a>
                     <a class="mdl-navigation__link puppycode-file" href="">Import</a>
                     <a class="mdl-navigation__link puppycode-file" href="">Export</a>
                     <a class="mdl-navigation__link puppycode-file" href="">Share</a>
-                    <!-- Code -->
-                    <a class="mdl-navigation__link puppycode-code" href="" style="display:none">Blocks</a>
-                    <a class="mdl-navigation__link puppycode-code" href="" style="display:none">Designer</a>
-                    <a class="mdl-navigation__link puppycode-code" href="" style="display:none">Text</a>
-                    <!-- Preview -->
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Open in new tab</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">View Google</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">View Project</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">View Console</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">View Terminal</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Refresh</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Back</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Forward</a>
-                    <!-- Community -->
-                    <a class="mdl-navigation__link puppycode-community" href="" style="display:none">Publish</a>
-                    <a class="mdl-navigation__link puppycode-community" href="" style="display:none">Add to group</a>
+                    <!-- Home -->
+                    <a class="mdl-navigation__link puppycode-code" href="" style="display:none">Submit</a>
+                    <!-- View -->
+                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Google</a>
+                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Problem</a>
+                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Output</a>
                     <!-- Addons -->
-                    <a class="mdl-navigation__link puppycode-library" href="" style="display:none">Download
-                        libraries</a>
-                    <!-- Addons -->
-                    <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Sample Addon</a>
+                    <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Sample</a>
                     <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Install addons</a>
                 </nav>
             </div>
 
         </header>
         <div class="mdl-layout__drawer" style="background-color:black;color:white">
-            <span class="mdl-layout-title"><a href="#" style="color:inherit;text-decoration:inherit"
-                    id="filename">Project</a></span>
+            <span class="mdl-layout-title"><a href="/" style="color:inherit;text-decoration:inherit" target="_top"
+                    id="filename">PuppyCode</a></span>
 
             <nav class="mdl-navigation">
-                <center>
+                <!--center>
                     <span>
                         <button
                             class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--primary"
@@ -94,52 +78,40 @@
                             <i class="material-icons md-24">play_arrow</i>
                         </button>
                     </span>
-                </center>
+                </center-->
 
                 <a class="mdl-navigation__link" style="cursor:pointer">Something</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
-                <div id="blocks"
-                    style="width: 100%; height: 49.5%; padding-bottom:2px; display:inline-block; border: 1px solid grey">
-                    <label class="mdl-button mdl-js-button mdl-button--icon">
-                        <i class="material-icons">close</i>
-                    </label>
-                    <label class="mdl-button mdl-js-button mdl-button--icon">
-                        <i class="material-icons">download</i>
-                    </label>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="searchbar">
-                        <label class="mdl-textfield__label" for="searchbar">
-                            <i class="material-icons" style="height:16px;width:16px">search</i>
-                            Search
-                        </label>
+                <div id="container"
+                    style="width: 100%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
                     </div>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored puppycode-block hat">
-                        Button
-                    </button>
                 </div>
-                <div id="editor"
-                    style="width: 100%; height: 49.5%; padding-bottom:2px; display:inline-block; border: 1px solid grey">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary"
-                        style="position:fixed;margin-top:30%;margin-left:78%">
-                        <i class="material-icons">more_horiz</i>
-                    </button>
+                <!--div id="view"
+                    style="width: 49.5%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
                 </div>
                 <iframe src="about:blank"
-                    style="width: 50%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed;display:none"></iframe>
+                    style="width: 50%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed;display:none"></iframe-->
 
-                <script src="/node_modules/monaco-editor/min/vs/loader.js"></script>
-                <!--script>
-                    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } });
+                <script src="/puppycode-core/node_modules/monaco-editor/min/vs/loader.js"></script>
+                <script>
+                    require.config({ paths: { vs: '/puppycode-core/node_modules/monaco-editor/min/vs' } });
 
                     require(['vs/editor/editor.main'], function () {
                         var editor = monaco.editor.create(document.getElementById('container'), {
-                            value: [
+                            /*value: [
+                                'import java.uti'
+                            ].join('\n'),*/
+                            value:`import java.util.*;
 
-                            ].join('\n'),
-                            language: 'html',
+public class Main{
+    static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+    }
+}`,
+                            language: 'java',
                             theme: "vs-dark"
                         });
                         editor.onKeyDown((event) => {
@@ -148,10 +120,10 @@
                                 event.preventDefault();
                             }
                         });
-                        editor.updateOptions({ contextmenu: false });
+                        editor.updateOptions({ contextmenu: true });
                         document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[0].style.height = "100%"
                     });
-                </script-->
+                </script>
             </div>
         </main>
     </div>
