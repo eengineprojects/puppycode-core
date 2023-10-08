@@ -1,0 +1,78 @@
+.puppycode-block{
+    padding-left:3px;
+    cursor:default
+}
+.puppycode-block-drag{
+    cursor:move
+}
+
+.puppycode-block.hat{
+    background-color:rgb(245,124,0);
+    border-radius: 5px 0px 0px 5px
+}
+.puppycode-block.hat:hover{
+    background-color:orange
+}
+.puppycode-block.loop{
+    background-color:red
+}
+
+.puppycode-grid{
+    border: 1px solid black;
+    width:9.9%;
+}
+.puppycode-grid-row{
+    border: 1px solid black;
+    height:9%;
+    width:100%;
+}
+.puppycode-grid:hover{
+    background-color: darkslategray;
+}
+
+
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+    padding-top:10px
+}
+
+.strike > span {
+    position: relative;
+    color:white;
+    display: inline-block;
+}
+
+.strike > span:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+body{
+    color:white
+}
