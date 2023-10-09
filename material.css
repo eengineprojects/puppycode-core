@@ -5298,7 +5298,8 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     width: 56px;
     z-index: 4;
     text-align: center;
-    background-color: rgb(33, 150, 243);
+    /*background-color: rgb(33, 150, 243);*/
+    background-color: #3f51b5;
     color: transparent;
     cursor: pointer;
     -webkit-user-select: none;
@@ -5365,6 +5366,75 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, .6);
+    overflow: hidden
+}
+.mdl-layout__tab:hover {
+    margin: 0;
+    border: none;
+    padding: 0 24px;
+    float: left;
+    position: relative;
+    display: block;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-decoration: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    /*font-weight: 500;*/
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255);
+    overflow: hidden
+}
+.mdl-layout__tablink {
+    margin: 0;
+    border: none;
+    padding: 0 24px;
+    float: left;
+    position: relative;
+    display: block;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-decoration: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    /*font-weight: 500;*/
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+    overflow: hidden
+}
+.mdl-layout__tablink:hover {
+    margin: 0;
+    border: none;
+    padding: 0 24px;
+    float: left;
+    position: relative;
+    display: block;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-decoration: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    /*font-weight: 500;*/
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255);
     overflow: hidden
 }
 
