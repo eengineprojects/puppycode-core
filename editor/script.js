@@ -7,6 +7,7 @@ window.onload = function(){
     setTimeout(function(){
         document.getElementsByClassName("mdl-layout__drawer-button")[0].remove()
         document.getElementsByClassName("mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button")[0].remove()
+        document.getElementsByClassName("mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button")[0].remove()
     },250)
 }
 function newBlock(){
