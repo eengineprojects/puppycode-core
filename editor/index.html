@@ -36,42 +36,48 @@
 
         
     </div-->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+    <div class="mdl-layout mdl-js-layout /*mdl-layout--fixed-drawer*/
             mdl-layout--fixed-header">
         <header class="mdl-layout__header" style="background-color:#3f51b5;color:#3f51b5">
-            <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5">
-                <a href="#scroll-tab-1" class="mdl-layout__tab" onclick="">File</a>
-                <a href="#scroll-tab-2" class="mdl-layout__tab is-active" onclick="">Home</a>
-                <a href="#scroll-tab-3" class="mdl-layout__tab" onclick="">Inspector</a>
-                <a href="#scroll-tab-3" class="mdl-layout__tab" onclick="">View</a>
-                <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">Add Ons</a>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect"
+                style="font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5">
+                <a href="#scroll-tab-6" class="mdl-layout__tab is-active" onclick="">game.js</a>
                 <div class="mdl-layout-spacer"></div>
-                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons" style="margin-top:10px">home</i></a>
-                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons" style="margin-top:10px">folder</i></a>
-                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons" style="margin-top:10px;margin-left:0px;position:absolute">account_circle</i></a>
+                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
+                    style="margin-top:10px">add</i></a>
+                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
+                    style="margin-top:10px">folder</i></a>
+                <a href="#scroll-tab-3" class="mdl-layout__tablink" onclick=""><i class="material-icons"
+                        style="margin-top:10px">extension</i></a>
+                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
+                    style="margin-top:10px">play_arrow</i></a>
+                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
+                        style="margin-top:10px;margin-left:0px;position:absolute">account_circle</i></a>
             </div>
-            <div class="mdl-layout__header-row">
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <!-- File -->
-                    <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Import</a>
-                    <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Export</a>
-                    <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Share</a>
-                    <!-- Home -->
-                    <a class="mdl-navigation__link puppycode-code" href="">Submit</a>
-                    <!-- View -->
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Google</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Problem</a>
-                    <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Output</a>
-                    <!-- Addons -->
-                    <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Sample</a>
-                    <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Install addons</a>
+            <div class="mdl-layout__header-row mdl-layout__tab-bar mdl-js-ripple-effect" style="display:none;font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5;margin-top:10px;position:absolute">
+                <a href="#scroll-tab-1" class="mdl-layout__tab is-active" onclick="">game.js</a>
+                <nav class="mdl-navigation mdl-layout--large-screen-only" style="display:none">
+                    <div style="display:none"><!-- File -->
+                        <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Import</a>
+                        <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Export</a>
+                        <a class="mdl-navigation__link puppycode-file" href="" style="display:none">Share</a>
+                        <!-- Home -->
+                        <a class="mdl-navigation__link puppycode-code" href="">Submit</a>
+                        <!-- View -->
+                        <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Google</a>
+                        <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Problem</a>
+                        <a class="mdl-navigation__link puppycode-preview" href="" style="display:none">Output</a>
+                        <!-- Addons -->
+                        <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Sample</a>
+                        <a class="mdl-navigation__link puppycode-addon" href="" style="display:none">Install addons</a>
+                    </div>
                 </nav>
             </div>
 
         </header>
-        <div class="mdl-layout__drawer" style="background-color:black;color:white">
-            <span class="mdl-layout-title"><a href="https://sites.google.com/view/puppycode" style="color:inherit;text-decoration:inherit" target="_top"
-                    id="filename">Project</a></span>
+        <div class="mdl-layout__drawer" style="background-color:black;color:white;display:none">
+            <span class="mdl-layout-title"><a href="https://sites.google.com/view/puppycode"
+                    style="color:inherit;text-decoration:inherit" target="_top" id="filename">Project</a></span>
 
             <nav class="mdl-navigation">
                 <!--center>
@@ -91,45 +97,45 @@
             <div class="page-content">
                 <div id="container"
                     style="width: 100%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
-                    </div>
                 </div>
-                <!--div id="view"
+            </div>
+            <!--div id="view"
                     style="width: 49.5%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
                 </div>
                 <iframe src="about:blank"
                     style="width: 50%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed;display:none"></iframe-->
 
-                <script src="/puppycode-core/node_modules/monaco-editor/min/vs/loader.js"></script>
-                <script>
-                    require.config({ paths: { vs: '/puppycode-core/node_modules/monaco-editor/min/vs' } });
+            <script src="/puppycode-core/node_modules/monaco-editor/min/vs/loader.js"></script>
+            <script>
+                require.config({ paths: { vs: '/puppycode-core/node_modules/monaco-editor/min/vs' } });
 
-                    require(['vs/editor/editor.main'], function () {
-                        var editor = monaco.editor.create(document.getElementById('container'), {
-                            /*value: [
-                                'import java.uti'
-                            ].join('\n'),*/
-                            value:`import java.util.*;
+                require(['vs/editor/editor.main'], function () {
+                    var editor = monaco.editor.create(document.getElementById('container'), {
+                        /*value: [
+                            'import java.uti'
+                        ].join('\n'),*/
+                        value: `import java.util.*;
 
 public class Main{
     static void main(String[] args){
         Scanner in = new Scanner(System.in);
     }
 }`,
-                            language: 'java',
-                            theme: "vs-dark"
-                        });
-                        editor.onKeyDown((event) => {
-                            const { keyCode, ctrlKey, metaKey } = event;
-                            if ((keyCode === 33 || keyCode === 52) && (metaKey || ctrlKey)) {
-                                event.preventDefault();
-                            }
-                        });
-                        editor.updateOptions({ contextmenu: true });
-                        document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[0].style.height = "100%"
+                        language: 'java',
+                        theme: "vs-dark"
                     });
-                </script>
-            </div>
-        </main>
+                    editor.onKeyDown((event) => {
+                        const { keyCode, ctrlKey, metaKey } = event;
+                        if ((keyCode === 33 || keyCode === 52) && (metaKey || ctrlKey)) {
+                            event.preventDefault();
+                        }
+                    });
+                    editor.updateOptions({ contextmenu: true });
+                    document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[0].style.height = "100%"
+                });
+            </script>
+    </div>
+    </main>
     </div>
 
     <script type="module">
