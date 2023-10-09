@@ -16,3 +16,7 @@ function newBlock(){
         }
     }
 }
+function opennotes(){
+    document.getElementById('notes').style.display = "inline-block";
+    document.getElementById('container').style.display = "none";
+}

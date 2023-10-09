@@ -41,24 +41,31 @@
         <header class="mdl-layout__header" style="background-color:#3f51b5;color:#3f51b5">
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect"
                 style="font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5">
-                <span id="files" style="overflow-x:scroll"><a href="#scroll-tab-6" class="mdl-layout__tab is-active" onclick="">game.js</a>
+                <span id="files" style="overflow-x:scroll">
+                    <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="opennotes()"><i class="material-icons"
+                            style="margin-top:10px">notes</i></a>
+                    <a href="#scroll-tab-6" class="mdl-layout__tab" onclick=""><i class="material-icons"
+                            style="margin-top:10px">folder</i></a>
+                            <a href="#scroll-tab-6" class="mdl-layout__tab" onclick=""><i class="material-icons"
+                                style="margin-top:10px">sports_esports</i></a>
+                    <a href="#scroll-tab-3" class="mdl-layout__tab" onclick=""><i class="material-icons"
+                            style="margin-top:10px">extension</i></a>
+                    <a href="#scroll-tab-6" class="mdl-layout__tab is-active" onclick="">game.js</a>
                     <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">scene1.json</a>
                     <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">model.obj</a>
                     <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">sound.mp3</a>
+                    <a href="#scroll-tab-6" class="mdl-layout__tab" onclick="">vector.svg</a>
                 </span>
                 <div class="mdl-layout-spacer"></div>
                 <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
-                    style="margin-top:10px">notes</i></a>
+                    style="margin-top:10px">save</i></a>
                 <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
-                    style="margin-top:10px">folder</i></a>
-                <a href="#scroll-tab-3" class="mdl-layout__tablink" onclick=""><i class="material-icons"
-                        style="margin-top:10px">extension</i></a>
-                <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
-                    style="margin-top:10px">play_arrow</i></a>
+                        style="margin-top:10px">play_arrow</i></a>
                 <a href="#scroll-tab-6" class="mdl-layout__tablink" onclick=""><i class="material-icons"
                         style="margin-top:10px;margin-left:0px;position:absolute">account_circle</i></a>
             </div>
-            <div class="mdl-layout__header-row mdl-layout__tab-bar mdl-js-ripple-effect" style="display:none;font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5;margin-top:10px;position:absolute">
+            <div class="mdl-layout__header-row mdl-layout__tab-bar mdl-js-ripple-effect"
+                style="display:none;font-family:'Roboto';font-weight:500;background-color: #3f51b5;color:#3f51b5;margin-top:10px;position:absolute">
                 <a href="#scroll-tab-1" class="mdl-layout__tab is-active" onclick="">game.js</a>
                 <nav class="mdl-navigation mdl-layout--large-screen-only" style="display:none">
                     <div style="display:none"><!-- File -->
@@ -102,6 +109,9 @@
                 <div id="container"
                     style="width: 100%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
                 </div>
+                <div id="notes"
+                    style="width: 100%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed; display:none">
+                </div>
             </div>
             <!--div id="view"
                     style="width: 49.5%; height: 99.5%; display:inline-block; border: 1px solid grey;position:fixed">
@@ -118,24 +128,27 @@
                         /*value: [
                             'import java.uti'
                         ].join('\n'),*/
-                        value: `import java.util.*;
-
-public class Main{
-    static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-    }
-}`,
-                        language: 'java',
+                        value: `console.log("grrr");`,
+                        language: 'javascript',
                         theme: "vs-dark"
-                    });
-                    editor.onKeyDown((event) => {
-                        const { keyCode, ctrlKey, metaKey } = event;
-                        if ((keyCode === 33 || keyCode === 52) && (metaKey || ctrlKey)) {
-                            event.preventDefault();
-                        }
                     });
                     editor.updateOptions({ contextmenu: true });
                     document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[0].style.height = "100%"
+
+                    editor = monaco.editor.create(document.getElementById('notes'), {
+                        /*value: [
+                            'import java.uti'
+                        ].join('\n'),*/
+                        value: `Updates:
+- Added updates tab`,
+                        language: 'java',
+                        theme: "vs-dark"
+                    });
+                    editor.updateOptions({ contextmenu: true, readOnly:true });
+                    document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[1].style.width = "100%"
+                    document.getElementsByClassName("monaco-editor no-user-select  showUnused showDeprecated vs-dark")[1].style.height = "100%"
+                    document.getElementsByClassName("overflow-guard")[1].style.width = "100%"
+                    document.getElementsByClassName("overflow-guard")[1].style.height = "100%"
                 });
             </script>
     </div>
