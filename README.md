@@ -4,3 +4,5 @@ this is the code our website relies on (for iframes) but isnt the full source co
 https://sites.google.com/view/puppycode
 
 https://eengineprojects.github.io/puppycode-core/editor
+
+Experimental mobile version: https://eengineprojects.github.io/puppycode-core/editor/mobile
