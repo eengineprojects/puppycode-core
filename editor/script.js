@@ -9,10 +9,10 @@ window.onload = function () {
         document.getElementsByClassName("mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button")[0].remove()
         document.getElementsByClassName("mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button")[0].remove()
     }, 250)
-    colors = ["rgb(244,67,54)","rgb(255,152,0)","rgb(76,175,80)","rgb(33,150,243)","rgb(64,81,181)","rgb(103,58,183)","rgb(233,28,99)"]
+    colors = ["rgb(244,67,54)","rgb(255,152,0)","rgb(76,175,80)","rgb(0,150,136)","rgb(0,188,212)","rgb(33,150,243)","rgb(64,81,181)","rgb(103,58,183)","rgb(233,28,99)"]
     color = colors[Math.floor(Math.random() * colors.length)]
-    document.getElementById("tabs").style.backgroundColor = color
-    document.getElementById("header").style.backgroundColor = color
+    //document.getElementById("tabs").style.backgroundColor = color
+    //document.getElementById("header").style.backgroundColor = color
 }
 function newBlock() {
     for (i = 0; i < document.getElementsByClassName("puppycode-block-drag").length; i++) {
